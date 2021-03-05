@@ -1,0 +1,27 @@
+{
+  "name": "el-pagination",
+  "version": "1.0.0",
+  "description": "pagination component based on web componet 'custom compent'",
+  "main": "./lib/bundle.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./node_modules/.bin/babel src/index.js --out-dir lib && rollup lib/index.js --file lib/bundle.js --format iife"
+  },
+  "keywords": [
+    "pagination",
+    "page",
+    "component",
+    "CustomComponent"
+  ],
+  "author": "elvis",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.13.0",
+    "@babel/core": "^7.13.8",
+    "@babel/preset-env": "^7.13.9",
+    "rollup-plugin-babel": "^4.4.0"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1"
+  }
+}
